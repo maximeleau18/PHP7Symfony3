@@ -1,0 +1,6 @@
+# src/UserBundle/config/services.yml
+
+services:
+    schema_user:
+        class: UserBundle\Schema\Schema
+        arguments: ["@doctrine.orm.entity_manager"]
