@@ -4,10 +4,26 @@
 
     <h1>Users</h1>
 
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Username</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+
     {% for user in users %}
 
-        <p>{{ user.username }}</p>
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
 
     {% endfor %}
 
+        </tbody>
+    </table>
 {% endblock %}
